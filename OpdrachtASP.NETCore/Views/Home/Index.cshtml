@@ -1,0 +1,10 @@
+﻿@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer ViewLocalizer
+@{
+    ViewData["Title"] = "Information";
+}
+
+<div class="text-center">
+    @ViewLocalizer["Welcome to our website"] (@CultureInfo.CurrentCulture.NativeName)
+</div>

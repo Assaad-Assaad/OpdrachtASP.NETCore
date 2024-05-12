@@ -1,0 +1,16 @@
+﻿@model OpdrachtASP.NETCore.Models.Info
+
+@{
+    Layout = "_FormLayout";
+}
+
+
+<form asp-controller="Info" asp-action="Update">
+    Name:  <input asp-for="Name" /> <br />
+    <span asp-validation-for="Name"></span><br/>
+    Email:  <input asp-for="Email" /> <br />
+    <span asp-validation-for="Email"></span><br />
+    Message: <textarea asp-for="Message"></textarea><br />
+    <span asp-validation-for="Message"></span><br /><br />
+    <button type="submit">Submit</button>
+</form>

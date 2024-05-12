@@ -1,0 +1,19 @@
+﻿@model OpdrachtASP.NETCore.Models.Info
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-centre">
+    <p>Name: @Model.Name</p>
+    <p>Email: @Model.Email</p>
+    <p>Message: @Model.Message</p>
+</div>
+
+
+
+
+
+
+<a asp-controller="Info" asp-action="Update"><button class="btn btn-primary">Update</button></a>
